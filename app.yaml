@@ -1,0 +1,61 @@
+application: redditatnight
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: no
+
+inbound_services:
+- mail
+
+
+
+handlers:
+- url: /_ah/mail/.+
+  script: handle_incoming_email.py
+  login: admin
+
+- url: /css
+  static_dir: css
+
+
+- url: /js
+  static_dir: js
+
+
+- url: /img
+  static_dir: img
+  
+- url: /fonts
+  static_dir: fonts
+
+- url: /contact_me.php
+  script: contact_me.php
+
+- url: /scrape
+  script: contact_me.py
+  
+- url: /getsub/.*
+  script: contact_me.py
+  
+- url: /send
+  script: contact_me.py
+  
+- url: /contact_me.py
+  script: contact_me.py
+  
+- url: /contact.html
+  static_files: contact.html
+  upload: contact.html
+
+- url: /favicon\.ico
+  static_files: img/favicon.ico
+  upload: img/favicon\.ico
+
+- url: /blog.html
+  static_files: '_site/personal/2013/12/01/hello-world/index.html'
+  upload: '_site/.*'
+
+- url: /
+  static_files: index.html
+  upload: index.html
+

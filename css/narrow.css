@@ -1,0 +1,110 @@
+
+html {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
+body {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: auto !important;
+	overflow-x: hidden !important;
+	
+}
+
+.app-icon {
+	
+	max-width: 100px;
+	max-height: 100px;
+	padding: 10px 10px;
+}
+
+.bgimg {
+
+	background-image: url(../img/background.jpg);
+	background-repeat:no-repeat;
+	max-width: none;
+	background-size: cover;
+}
+
+.container-narrow {
+	margin: 0 auto;
+	max-width: 700px;
+}
+
+.container-narrow > hr {
+	margin: 0 0 0 0;
+}
+
+.glyphicon-chevron-up {
+	margin-top:10px;
+	margin-right:10px;
+	color:gray;
+}
+
+.jumbotron {
+	width: auto;
+	max-width: 1000px;
+	margin: 5px 0;
+	text-align: center;
+	background-color : transparent;
+}
+
+.jumbotron h1 {
+	font-size: 72px;
+	line-height: 1;
+	font-weight: bold;
+	color: white;
+}
+
+.jumbotron p {
+	color:white;
+}
+
+.jumbotron .btn {
+	font-size: 21px;
+	padding: 14px 14px;
+	
+}
+
+.marketing {
+	margin: 40px 0;
+}
+
+.marketing p + h4 {
+	margin-top: 28px;
+}
+
+
+.navbar-header .navbar-brand {
+	color: white;
+}
+
+.featurette {
+	padding: 10px 10px;
+}
+
+.featurette-divider {
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.featurette-subheading {
+  font-weight: 300;
+  line-height: 1;
+}
+
+.featurette-max {
+	margin-top: 40px;
+	max-width:200px;
+	max-height:200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
